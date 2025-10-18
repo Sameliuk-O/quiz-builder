@@ -1,0 +1,44 @@
+{
+  "name": "quiz-builder",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --config vite.config.ts",
+    "build": "../node_modules/.bin/tsc -b && vite build",
+    "lint": "../node_modules/.bin/eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint:fix": "../node_modules/.bin/eslint . --ext .js,.jsx,.ts,.tsx --fix",
+    "format": "../node_modules/.bin/prettier --write .",
+    "preview": "../node_modules/.bin/vite preview"
+  },
+  "dependencies": {
+    "axios": "^1.12.2",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-prettier": "^5.5.4",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-hook-form": "^7.65.0",
+    "react-router-dom": "^7.9.4"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.36.0",
+    "@tailwindcss/postcss": "^4.1.14",
+    "@types/node": "^24.8.1",
+    "@types/react": "^19.1.16",
+    "@types/react-dom": "^19.1.9",
+    "@vitejs/plugin-react": "^5.0.4",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^9.36.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.22",
+    "globals": "^16.4.0",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.14",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.45.0",
+    "vite": "^7.1.7"
+  }
+}
