@@ -1,5 +1,5 @@
-import { fetcher } from '../utils/fetcher';
 import type { Quiz } from '@models/types';
+import { fetcher } from '@utils/fetcher.ts';
 
 export const getQuizzes = () => fetcher<Quiz[]>('/quizzes');
 export const getQuiz = (id: number) => fetcher<Quiz>(`/quizzes/${id}`);

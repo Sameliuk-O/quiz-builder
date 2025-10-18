@@ -2,7 +2,7 @@ import { type FC, useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { getQuiz } from '@api/quizzes';
 import { type Quiz, TypeInput } from '@models/types';
-import TextInput from '../../components/ui/TextInput/TextInput.tsx';
+import { TextInput } from '@components/ui/TextInput';
 
 const QuizDetail: FC = () => {
   const { id } = useParams();

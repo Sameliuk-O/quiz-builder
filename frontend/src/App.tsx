@@ -1,7 +1,6 @@
 import type { FC } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import './App.css';
 import { CreateQuiz } from '@pages/CreateQuiz';
 import { QuizList } from '@pages/QuizList';
 import { QuizDetail } from '@pages/QuizDetail';
