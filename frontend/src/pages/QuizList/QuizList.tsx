@@ -2,6 +2,7 @@ import { type FC, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { deleteQuiz, getQuizzes } from '@api/quizzes';
 import type { Quiz } from 'types/types';
+import { Button } from '@components/ui/Button';
 
 const QuizList: FC = () => {
   const [quizzes, setQuizzes] = useState<Quiz[]>([]);
@@ -36,12 +37,12 @@ const QuizList: FC = () => {
             >
               {q.title} ({q?.questionCount ?? 0})
             </Link>
-            <button
+            <Button
               onClick={() => handleDelete(q.id)}
               className="ml-4 px-3 py-1 bg-red-500 text-white rounded-md hover:bg-red-600 transition cursor-pointer mr-4"
             >
               Delete
-            </button>
+            </Button>
           </li>
         ))}
       </ul>
